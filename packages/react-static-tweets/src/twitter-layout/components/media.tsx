@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import { useTweet } from './tweet/tweet'
 
 export const Img = ({ width, height, src, ...p }) => {
@@ -20,7 +19,8 @@ export const Img = ({ width, height, src, ...p }) => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <Image
+          <h1>TestImage</h1>
+          {/* <Image
             {...p}
             src={`${src}&name=small`}
             quality={80}
@@ -30,7 +30,7 @@ export const Img = ({ width, height, src, ...p }) => {
             style={{
               objectFit: 'cover'
             }}
-          />
+          /> */}
         </a>
       </summary>
     </details>
